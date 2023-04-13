@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Book.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Booking</title>
+    
+    
+        <link rel="icon" type="image/png" href="insomniacss grp 4 logo.png"/>
+    <link rel="stylesheet" href="form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@800&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+
+  
+</head>
+<body>
+  
+  <div class="header">
+    <img src="mystic wonders of siquijor header.png" width="60%" length="60%" style="border-radius:5px;float:center;"> 
+    <img src="siquijor logo.png" width="5%" length="5%" style="float:left;margin-left:100px;margin-top:15px;"> 
+    <img src="insomniacss grp 4 logo.png" width="5%" length="5%" style="float:right;margin-right:100px;padding-top:15px;">
+   </div></div>
+  
+  <ul class="button">
+  <li><a class="button1" href="Siquijor.html">Home</a></li>
+  <li><a  class="button1"  href="Sights.html">Sights</a></li>
+  <li><a  class="button1" href="Delicacies.html">Delicacies</a></li>
+  <li><a class="button1" href="Festivals.html">Festivals</a></li>
+    <li><a class="button1" href="Economic Status.html">Economic Status</a></li>
+    <li><a class="button1" style="color:gold;" href="Stay-In.html">Stay-In</a></li>
+    </ul>
+    <div class="info " style="text-align:center;"><h1>Price List:</h1></div>
+    <br>
+    <br>
+    <br>
+    <div class="container1">
+      <div class="info1">
+          <img src="casa-coco-standard-no-balcony-1.jpg" width="300px" length="100px"><br>
+          Standard Room<br>
+          <p style="color:gold;font-size:30px;">₱
+      4,499.00/Night</p>
+      </div>
+      <div class="info1"><img src="casa-coco-deluxe-2.jpg" width="300px" length="100px"></img><br>Deluxe
+
+          <p style="color:gold;font-size:30px;">₱
+      5,799.00/Night</p>
+         </div>
+      
+      
+      <div class="info1"><img src="IMG_3934.JPG" width="300px" length="100px"></img><br>Superior
+        
+          <p style="color:gold;font-size:30px;">₱
+      6,499.00/Night</p>
+         </div>
+      
+      
+      <div class="info1"><img src="IMG_3934.JPG" width="300px" length="100px"></img><br>Turtle Cottages
+          
+          <p style="color:gold;font-size:30px;">₱
+       10,999.00/Night</p>
+          </div>
+      
+      
+      <div class="info1"><img src="IMG_3953.JPG" width="300px" length="100px"></img><br>Seascape
+          
+          <p style="color:gold;font-size:30px;">₱
+       13,999.00/Night</p>
+          
+      </div>
+      
+      
+      <div class="info1"><img src="IMG_3964.JPG" width="300px" length="100px"></img><br>Penthouse
+          
+             
+          <p style="color:gold;font-size:30px;">₱
+       27,999.00/Night</p>
+          </div></div>
+    
+    <div class="info">
+      <form action="Booked.html">
+      <h1 style="text-align:center;">Booking:</h1>
+      <label style="font-family:Alegreya Sans SC;">Start Date*</label><br>
+    <input type="date" id="datePickerId" max='2024-01-01' id="start" style="font-family:Alegreya Sans SC;" name="Start Date" required><br><br>
+      <label style="font-family:Alegreya Sans SC;">End Date*</label><br>
+      <input type="date"  max='2024-01-01' id="start" style="font-family:Alegreya Sans SC;" name="End Date"><br><br>
+      
+      <label style="font-family:Alegreya Sans SC;">Rooms:*</label><br>
+        <select id="select" required>
+          <option value="0">Select</option>
+          <option data-price="4499" value="1">Standard Room</option>
+          <option data-price="5799" value="2">Deluxe</option>
+          <option data-price="6499" value="3">Superior</option>
+          <option data-price="10999" value="4">Turtle Cottages</option>
+          <option data-price="13999" value="5">Seascape</option>
+          <option data-price="27999" value="6">Penthouse</option>
+          
+      </select> 
+      <p style="font-family:Alegreya Sans SC;" required>Nights:*</p>
+      <input type=number name="quantity" id="quantity" min='0' max='4' required><br>
+      <h1>Extra Person For Beddings:</h1>
+      <p style="font-family:Alegreya Sans SC;">Adult (₱500)</p>
+      <input type=number name="quantity" id="quantity2" min='0' max='4'><br>
+      <label style="font-family:Alegreya Sans SC;">Children (₱300)</label><br>
+      <input type=number name="quantity" id="quantity1" min='0' max='4'><br>
+      
+      <button type="button" class="button3" onclick="calculate()">Calculate</button>
+      <p style="font-family:Alegreya Sans SC;">Total price:</p><div style="font-family:Alegreya Sans SC;color:gold;font-size:50px;" id="total">
+    
+      </div>
+      
+    </div>
+    <div class="info">
+     
+  
+
+  
+      
+        <h1 style="font-family:Alegreya Sans SC;text-align:center;">Payment</h1><br>
+      <label style="font-family:Alegreya Sans SC;">Accepting Cards</label>
+      <div class="icon-container">
+        <i class="fa fa-cc-visa" style="color:navy;background-color:white;"></i>
+        <i class="fa fa-cc-amex" style="color:blue;background-color:white;"></i>
+        <i class="fa fa-cc-mastercard" style="color:red;background-color:white;"></i>
+        <i class="fa fa-cc-discover" style="color:orange;background-color:white;"></i><br>
+        <label for="cname" style="font-family:Alegreya Sans SC;">Name on Card*</label><br>
+                <input type="text" id="cname" name="cardname" placeholder="Juan Dela Cruz" style="font-family:Alegreya Sans SC;" required><br>
+                <label for="ccnum" style="font-family:Alegreya Sans SC;">Credit card number*</label><br>
+                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444"  style="font-family:Alegreya Sans SC;"required><br>
+                <label for="expmonth" style="font-family:Alegreya Sans SC;">Exp Month*</label><br>
+                <input type="text" id="expmonth" name="expmonth" placeholder="January"  style="font-family:Alegreya Sans SC;"required><br>
+                <label for="cvv" style="font-family:Alegreya Sans SC;">CVV*</label><br>
+                    <input type="text" id="cvv" name="cvv" placeholder="352" style="font-family:Alegreya Sans SC;"><br>
+                    <label for="expyear" style="font-family:Alegreya Sans SC;">Exp Year*</label><br>
+                    <input type="text" id="expyear" name="expyear" placeholder="2023" style="font-family:Alegreya Sans SC;" required><br>
+                    <h1 style="font-family:Alegreya Sans SC;">Billing Address*</h1><br>
+                    
+      <label for="fname" style="font-family:Alegreya Sans SC;"><i class="fa fa-user"></i> Full Name*</label><br>
+      <input type="text" style="font-family:Alegreya Sans SC;" id="fname" name="firstname" placeholder="John M. Doe" required></input><br>
+      <label for="email" style="font-family:Alegreya Sans SC;"><i class="fa fa-envelope"></i> Email*</label><br>
+                <input type="text" style="font-family:Alegreya Sans SC;" id="email" name="email" placeholder="juan@example.com" required>
+                <label for="adr" style="font-family:Alegreya Sans SC;"><i class="fa fa-address-card-o"></i> Address*</label><br>
+                <input type="text" style="font-family:Alegreya Sans SC;" id="adr" name="address" placeholder="Azcarraga, Manila" required><br>
+                <label for="city" style="font-family:Alegreya Sans SC;"><i class="fa fa-institution"></i> City*</label><br>
+                <input type="text" style="font-family:Alegreya Sans SC;"  id="city" name="city" placeholder="Manila" required>
+                <div id="total"></div>
+                <input type="submit" style="font-family:Alegreya Sans SC;" class="button3" value="Proceed">
+                </form>
+    </div>
+    </div>
+<br><br>
+
+
+
+ <div class="Footer_outer">
+  <div class="Footer_inner_left"><p>
+<p>Provincial Tourism Office</b></p>
+<p>(035) 480 9173</p><br>
+<p>Provincial Tourism Officer</b></p>
+<p>Cle Bern J. Paglinawan 0935-5742-557</p>
+<p style="text-decoration:underline;">cjpaglinawan1908@yahoo.com</p><br>
+<p>Vice Governor</b></p>
+<p>Mei Ling Quezon-Brown</p>
+<p style="text-decoration:underline;">meilingquezon@yahoo.com</p><br>
+<p>Traveler's Assistance Office</b></p>
+<p>0915-906-9093</p><br>
+</div>
+ 
+
+
+
+</body>
+</html>

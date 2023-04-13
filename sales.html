@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="insomniacss grp 4 logo.png"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="myscript.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@800&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title>Sales Report</title>
+</head>
+<body>
+    <div class="header">
+        <img src="mystic wonders of siquijor header.png" width="60%" length="60%" style="border-radius:5px;float:center;"> 
+        <img src="siquijor logo.png" width="5%" length="5%" style="float:left;margin-left:100px;margin-top:15px;"> 
+        <img src="insomniacss grp 4 logo.png" width="5%" length="5%" style="float:right;margin-right:100px;padding-top:15px;">
+       </div></div>
+      
+      <ul class="button">
+      <li><a class="button1" href="Siquijor.html">Home</a></li>
+      <li><a  class="button1"  href="Sights.html">Sights</a></li>
+      <li><a  class="button1" href="Delicacies.html">Delicacies</a></li>
+      <li><a class="button1" href="Festivals.html">Festivals</a></li>
+        <li><a class="button1" href="Economic Status.html">Economic Status</a></li>
+        <li><a class="button1" style="color:gold;" href="Stay-In.html">Stay-In</a></li>
+    </ul>
+    <div class="info"><div class="room">Projected Sales Report 2023</div></div>
+    <div class="info"><img width=100% length=100% src='Graph.png'></img></div>
+    <table>
+        <tr>
+          <th>Room Name</th>
+          <th></th>
+          <th>January</th>
+          <th>February</th>
+          <th>March</th>
+          <th>April</th>
+          <th>May</th>
+          <th>June</th>
+          <th>July</th>
+          <th>August</th>
+          <th>September</th>
+          <th>October</th>
+          <th>November</th>
+          <th>December</th>
+          <th>Total:</th>
+        </tr>
+        <tr>
+          <td rowspan="3">Standard Room</td>
+          
+          <td>Price Per Unit</td>
+          <td>₱ 4,499</td>
+          <td>₱ 4,499</td>
+          <td>₱ 4,499</td>
+          <td>₱ 4,499</td>
+          <td>₱ 4,499</td>
+          <td>₱ 4,499</td>
+          <td>₱ 4,499</td>
+          <td>₱ 4,499</td>
+          <td>₱ 4,499</td>
+          <td>₱ 4,499</td>
+          <td>₱ 4,499</td>
+          <td>₱ 4,499</td>        
+        </tr>
+        <tr>
+            <td>Units Sold</td>
+            <td><input type="text" value="14" id="standRoom1"></input></td>
+            <td><input type="text" value="12" id="standRoom2"></input></td>
+            <td><input type="text" value="17" id="standRoom3"></input></td>
+            <td><input type="text" value="19" id="standRoom4"></input></td>
+            <td><input type="text" value="16" id="standRoom5"></input></td>
+            <td><input type="text" value="15" id="standRoom6"></input></td>
+            <td><input type="text" value="14" id="standRoom7"></input></td>
+            <td><input type="text" value="11" id="standRoom8"></input></td>
+            <td><input type="text" value="8" id="standRoom9"></input></td>
+            <td><input type="text" value="6" id="standRoom10"></input></td>
+            <td><input type="text" value="14" id="standRoom11"></input></td>
+            <td><input type="text" value="21" id="standRoom12"></input></td>
+            <td><p id="standard"></p></td>
+            
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td><p id="jan1"></p></td>
+            <td><p id="feb1"></p></td>
+            <td><p id="mar1"></p></td>
+            <td><p id="apr1"></p></td>
+            <td><p id="may1"></p></td>
+            <td><p id="jun1"></p></td>
+            <td><p id="jul1"></p></td>
+            <td><p id="aug1"></p></td>
+            <td><p id="sep1"></p></td>
+            <td><p id="oct1"></p></td>
+            <td><p id="nov1"></p></td>
+            <td><p id="dec1"></p></td>
+        </tr>
+        <tr>
+            <td rowspan="3">Deluxe Room</td>
+            <td>Price Per Unit</td>
+          <td>₱ 5,799</td>
+          <td>₱ 5,799</td>
+          <td>₱ 5,799</td>
+          <td>₱ 5,799</td>
+          <td>₱ 5,799</td>
+          <td>₱ 5,799</td>
+          <td>₱ 5,799</td>
+          <td>₱ 5,799</td>
+          <td>₱ 5,799</td>
+          <td>₱ 5,799</td>
+          <td>₱ 5,799</td>
+          <td>₱ 5,799</td>
+          </tr>
+          <tr>
+              <td>Units Sold</td>
+              <td><input type="text" value="9" id="delRoom1"></input></td>
+            <td><input type="text" value="11" id="delRoom2"></input></td>
+            <td><input type="text" value="12" id="delRoom3"></input></td>
+            <td><input type="text" value="15" id="delRoom4"></input></td>
+            <td><input type="text" value="14" id="delRoom5"></input></td>
+            <td><input type="text" value="12" id="delRoom6"></input></td>
+            <td><input type="text" value="9" id="delRoom7"></input></td>
+            <td><input type="text" value="6" id="delRoom8"></input></td>
+            <td><input type="text" value="7" id="delRoom9"></input></td>
+            <td><input type="text" value="7" id="delRoom10"></input></td>
+            <td><input type="text" value="8" id="delRoom11"></input></td>
+            <td><input type="text" value="12" id="delRoom12"></input></td>
+            <td><p id="deluxe"></p></td>
+          </tr>
+          <tr>
+              <td>Total</td>
+              <td><p id="jan2"></p></td>
+            <td><p id="feb2"></p></td>
+            <td><p id="mar2"></p></td>
+            <td><p id="apr2"></p></td>
+            <td><p id="may2"></p></td>
+            <td><p id="jun2"></p></td>
+            <td><p id="jul2"></p></td>
+            <td><p id="aug2"></p></td>
+            <td><p id="sep2"></p></td>
+            <td><p id="oct2"></p></td>
+            <td><p id="nov2"></p></td>
+            <td><p id="dec2"></p></td>
+          </tr>
+          <tr>
+            <td rowspan="3">Superior Cottages</td>
+            
+            <td>Price Per Unit</td>
+            <td>₱ 6,499</td>
+          <td>₱ 6,499</td>
+          <td>₱ 6,499</td>
+          <td>₱ 6,499</td>
+          <td>₱ 6,499</td>
+          <td>₱ 6,499</td>
+          <td>₱ 6,499</td>
+          <td>₱ 6,499</td>
+          <td>₱ 6,499</td>
+          <td>₱ 6,499</td>
+          <td>₱ 6,499</td>
+          <td>₱ 6,499</td>
+          </tr>
+          <tr>
+              <td>Units Sold</td>
+              <td><input type="text" value="8" id="supCot1"></input></td>
+            <td><input type="text" value="5" id="supCot2"></input></td>
+            <td><input type="text" value="7" id="supCot3"></input></td>
+            <td><input type="text" value="5" id="supCot4"></input></td>
+            <td><input type="text" value="11" id="supCot5"></input></td>
+            <td><input type="text" value="7" id="supCot6"></input></td>
+            <td><input type="text" value="8" id="supCot7"></input></td>
+            <td><input type="text" value="5" id="supCot8"></input></td>
+            <td><input type="text" value="5" id="supCot9"></input></td>
+            <td><input type="text" value="5" id="supCot10"></input></td>
+            <td><input type="text" value="4" id="supCot11"></input></td>
+            <td><input type="text" value="5" id="supCot12"></input></td>
+            <td><p id="superior"></p></td>
+          </tr>
+          <tr>
+              <td>Total</td>
+              <td><p id="jan3"></p></td>
+            <td><p id="feb3"></p></td>
+            <td><p id="mar3"></p></td>
+            <td><p id="apr3"></p></td>
+            <td><p id="may3"></p></td>
+            <td><p id="jun3"></p></td>
+            <td><p id="jul3"></p></td>
+            <td><p id="aug3"></p></td>
+            <td><p id="sep3"></p></td>
+            <td><p id="oct3"></p></td>
+            <td><p id="nov3"></p></td>
+            <td><p id="dec3"></p></td>
+          </tr>
+          <tr>
+            <td rowspan="3">Turtle Cottages</td>
+            
+            <td>Price Per Unit</td>
+            <td>₱ 10,999</td>
+          <td>₱ 10,999</td>
+          <td>₱ 10,999</td>
+          <td>₱ 10,999</td>
+          <td>₱ 10,999</td>
+          <td>₱ 10,999</td>
+          <td>₱ 10,999</td>
+          <td>₱ 10,999</td>
+          <td>₱ 10,999</td>
+          <td>₱ 10,999</td>
+          <td>₱ 10,999</td>
+          <td>₱ 10,999</td>
+          </tr>
+          <tr>
+              <td>Units Sold</td>
+              <td><input type="text" value="2" id="turCot1"></input></td>
+            <td><input type="text" value="5" id="turCot2"></input></td>
+            <td><input type="text" value="9" id="turCot3"></input></td>
+            <td><input type="text" value="6" id="turCot4"></input></td>
+            <td><input type="text" value="4" id="turCot5"></input></td>
+            <td><input type="text" value="5" id="turCot6"></input></td>
+            <td><input type="text" value="6" id="turCot7"></input></td>
+            <td><input type="text" value="6" id="turCot8"></input></td>
+            <td><input type="text" value="3" id="turCot9"></input></td>
+            <td><input type="text" value="3" id="turCot10"></input></td>
+            <td><input type="text" value="3" id="turCot11"></input></td>
+            <td><input type="text" value="5" id="turCot12"></input></td>
+            <td><p id="turtle"></p></td>
+          </tr>
+          <tr>
+              <td>Total</td>
+              <td><p id="jan4"></p></td>
+            <td><p id="feb4"></p></td>
+            <td><p id="mar4"></p></td>
+            <td><p id="apr4"></p></td>
+            <td><p id="may4"></p></td>
+            <td><p id="jun4"></p></td>
+            <td><p id="jul4"></p></td>
+            <td><p id="aug4"></p></td>
+            <td><p id="sep4"></p></td>
+            <td><p id="oct4"></p></td>
+            <td><p id="nov4"></p></td>
+            <td><p id="dec4"></p></td>
+          </tr>
+          <tr>
+            <td rowspan="3">Seascape</td>
+            
+            <td>Price Per Unit</td>
+            <td>₱ 13,999</td>
+          <td>₱ 13,999</td>
+          <td>₱ 13,999</td>
+          <td>₱ 13,999</td>
+          <td>₱ 13,999</td>
+          <td>₱ 13,999</td>
+          <td>₱ 13,999</td>
+          <td>₱ 13,999</td>
+          <td>₱ 13,999</td>
+          <td>₱ 13,999</td>
+          <td>₱ 13,999</td>
+          <td>₱ 13,999</td>
+            
+          </tr>
+          <tr>
+              <td>Units Sold</td>
+              <td><input type="text" value="3" id="sea1"></input></td>
+            <td><input type="text" value="1" id="sea2"></input></td>
+            <td><input type="text" value="2" id="sea3"></input></td>
+            <td><input type="text" value="5" id="sea4"></input></td>
+            <td><input type="text" value="4" id="sea5"></input></td>
+            <td><input type="text" value="2" id="sea6"></input></td>
+            <td><input type="text" value="4" id="sea7"></input></td>
+            <td><input type="text" value="3" id="sea8"></input></td>
+            <td><input type="text" value="3" id="sea9"></input></td>
+            <td><input type="text" value="4" id="sea10"></input></td>
+            <td><input type="text" value="5" id="sea11"></input></td>
+            <td><input type="text" value="7" id="sea12"></input></td>
+            <td><p id="seaScape"></p></td>
+          </tr>
+          <tr>
+              <td>Total</td>
+              <td><p id="jan5"></p></td>
+            <td><p id="feb5"></p></td>
+            <td><p id="mar5"></p></td>
+            <td><p id="apr5"></p></td>
+            <td><p id="may5"></p></td>
+            <td><p id="jun5"></p></td>
+            <td><p id="jul5"></p></td>
+            <td><p id="aug5"></p></td>
+            <td><p id="sep5"></p></td>
+            <td><p id="oct5"></p></td>
+            <td><p id="nov5"></p></td>
+            <td><p id="dec5"></p></td>
+          </tr>
+          <tr>
+            <td rowspan="3">Penthouse</td>
+            
+            <td>Price Per Unit</td>
+            <td>₱ 27,999</td>
+          <td>₱ 27,999</td>
+          <td>₱ 27,999</td>
+          <td>₱ 27,999</td>
+          <td>₱ 27,999</td>
+          <td>₱ 27,999</td>
+          <td>₱ 27,999</td>
+          <td>₱ 27,999</td>
+          <td>₱ 27,999</td>
+          <td>₱ 27,999</td>
+          <td>₱ 27,999</td>
+          <td>₱ 27,999</td>
+          </tr>
+          <tr>
+              <td>Units Sold</td>
+              <td><input type="text" value="1" id="pent1"></input></td>
+            <td><input type="text" value="2" id="pent2"></input></td>
+            <td><input type="text" value="2" id="pent3"></input></td>
+            <td><input type="text" value="4" id="pent4"></input></td>
+            <td><input type="text" value="3" id="pent5"></input></td>
+            <td><input type="text" value="1" id="pent6"></input></td>
+            <td><input type="text" value="2" id="pent7"></input></td>
+            <td><input type="text" value="1" id="pent8"></input></td>
+            <td><input type="text" value="3" id="pent9"></input></td>
+            <td><input type="text" value="1" id="pent10"></input></td>
+            <td><input type="text" value="2" id="pent11"></input></td>
+            <td><input type="text" value="1" id="pent12"></input></td>
+            <td><p id="pentHouse"></p></td>
+          </tr>
+         
+              <td>Total</td>
+              <td><p id="jan6"></p></td>
+            <td><p id="feb6"></p></td>
+            <td><p id="mar6"></p></td>
+            <td><p id="apr6"></p></td>
+            <td><p id="may6"></p></td>
+            <td><p id="jun6"></p></td>
+            <td><p id="jul6"></p></td>
+            <td><p id="aug6"></p></td>
+            <td><p id="sep6"></p></td>
+            <td><p id="oct6"></p></td>
+            <td><p id="nov6"></p></td>
+            <td><p id="dec6"></p></td>
+          </tr>
+    <tr>
+      <td colspan="16">Monthly Revenue</td>
+      <tr>
+      <td rowspan="2"> </td>
+    </tr>
+
+<tr>
+  <td>Total</td>
+  <td><p id="totaljan"></p></td>
+            <td><p id="totalfeb"></p></td>
+            <td><p id="totalmar"></p></td>
+            <td><p id="totalapr"></p></td>
+            <td><p id="totalmay"></p></td>
+            <td><p id="totaljun"></p></td>
+            <td><p id="totaljul"></p></td>
+            <td><p id="totalaug"></p></td>
+            <td><p id="totalsep"></p></td>
+            <td><p id="totaloct"></p></td>
+            <td><p id="totalnov"></p></td>
+            <td><p id="totaldec"></p></td>
+</tr>
+      </table>
+      
+      <div class="info" id="totalRev"></div>
+      <input type="button" onclick="resortResult()" class="button4" value="Click To Calculate"></input>
+<br>
+
+</body>
+</html>
